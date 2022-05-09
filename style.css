@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100%;
+    color: #378ECD;   
+    background: url(/img/tehno.jpg);
+}
+
+.container {
+    width: 1280px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.tittle{
+    text-align: center;
+    text-shadow: #ADE865;
+    font-size: 35px;
+}
+
+.input{
+    border-radius: 10px;
+    padding: 10px;
+    width: 1150px;
+    height: 100px;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 34px;
+    background-color: #DBD3D5;
+}
+
+.keyboard{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 7px;
+    width: 90%;
+    background-color: #DBD3D5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #DBD3D5;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.key{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #378ECD;
+    color: #525363 ;
+    box-shadow: 0px 0px 20px gray;
+    width: 65px;
+    height: 65px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.key:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.key:active {
+    transform: scale(0.95, 0.95);
+    background-color: #051180;
+}
+
+.key:focus{
+    outline: none;
+}
+
+.key-active{
+    transform: scale(0.95, 0.95);
+    background-color: #051180;
+}
+
+.tilda{
+    width: 50px;
+}
+
+.key_backspace{
+    width: 150px;
+}
+
+.key_tab{
+    width: 95px;
+}
+
+.CapsLock{
+    position: relative;
+    width: 110px;
+}
+
+.key_caps::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.key_enter{
+    width: 150px;
+}
+
+.key_leftshift{
+    width: 145px;
+}
+
+.key_rightshift{
+    width: 155px;
+}
+
+.key_leftctrl{
+    width: 90px;
+}
+
+.key_space{
+    width: 510px;
+}
+
+.key_lang{
+    width: 80px;
+}
